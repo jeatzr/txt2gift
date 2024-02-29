@@ -1,0 +1,35 @@
+::example_test - Q1::The Linux kernel was released by... {
+~%-33.33333%Linus Torvalds and Richard Stallman in the year 1985
+~%-33.33333%Ken Thompson and Dennis Ritchie in the year 1970
+~%-33.33333%Richard Stallman in 1991
+=Linus Torvalds in 1991
+}
+
+::example_test - Q2::How can you show page by page the output of a command that is too long? {
+=find / -name "something" | less
+~%-33.33333%find / -name "something" | grep
+~%-33.33333%find / -name "something" > more
+~%-33.33333%find / -name "something" < less
+}
+
+::example_test - Q3::How can you find and show the lines inside a file that contains the word "http"? {
+~%-33.33333%find "http" in file
+~%-33.33333%find file > "http"
+=cat file | grep http
+~%-33.33333%grep file http
+}
+
+::example_test - Q4::How can you refer to a found file inside the -exec parameter in find {
+=With the characters \{\}
+~%-33.33333%With the character \=
+~%-33.33333%With the character \#
+~%-33.33333%With the character \~
+}
+
+::example_test - Q5::What character is used in Windows to define the root directory? {
+=\
+~%-33.33333%/
+~%-33.33333%[]
+~%-33.33333%\{\}
+}
+
