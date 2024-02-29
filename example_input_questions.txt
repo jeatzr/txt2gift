@@ -1,0 +1,29 @@
+The Linux kernel was released by... 
+Linus Torvalds and Richard Stallman in the year 1985 
+Ken Thompson and Dennis Ritchie in the year 1970 
+Richard Stallman in 1991 
+*Linus Torvalds in 1991
+
+How can you show page by page the output of a command that is too long?
+*find / -name "something" | less 
+find / -name "something" | grep 
+find / -name "something" > more 
+find / -name "something" < less
+
+How can you find and show the lines inside a file that contains the word "http"?
+find "http" in file
+find file > "http"
+*cat file | grep http
+grep file http
+
+How can you refer to a found file inside the -exec parameter in find
+*With the characters {}
+With the character =
+With the character #
+With the character ~
+
+What character is used in Windows to define the root directory?
+*\
+/
+[]
+{}
