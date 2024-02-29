@@ -2,9 +2,10 @@
 
 El presente script **txt2gift.py** ha sido realizado para facilitar la creación de lotes de preguntas en [formato GIFT](https://docs.moodle.org/all/es/Formato_GIFT) aceptado por cualquier Moodle para cargar baterías de preguntas. 
 
-El script transforma un fichero .txt en un formato súper sencillo y fácil de editar en cualquier editor de texto plano como Notepad y transformarlo a un fichero de texto GIFT que Moodle puede utilizar como formato de importar preguntas. 
+El script tiene como entrada un simple formato de texto plano en el formato explicado más abajo y tiene como salida un fichero GIFT que podremos importar en Moodle sin problemas. 
+Dicho fichero de entrada .txt se puede editar con Notepad o cualquier otro editor de texto plano.
 
-En principio está pensado solo para preguntas de opción múltiple donde solo hay una respuesta válida. La penalización de las respuestas incorrectas está fijada a -33.3% pero se puede cambiar en el código editanto el script como veremos más adelante
+En principio el script está pensado solo para preguntas de opción múltiple donde solo hay una respuesta válida. La penalización de las respuestas incorrectas está fijada a -33.3% pero se puede cambiar en el código editanto el script como veremos más adelante. 
 
 ## Utilización del comando:
 
