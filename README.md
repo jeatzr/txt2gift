@@ -2,8 +2,8 @@
 
 El presente script **txt2gift.py** ha sido realizado para facilitar la creación de lotes de preguntas en [formato GIFT](https://docs.moodle.org/all/es/Formato_GIFT) aceptado por cualquier Moodle para cargar baterías de preguntas. 
 
-El script tiene como entrada un simple formato de texto plano en el formato explicado más abajo y tiene como salida un fichero GIFT que podremos importar en Moodle sin problemas. 
-Dicho fichero de entrada .txt se puede editar con Notepad o cualquier otro editor de texto plano.
+El script tiene como entrada un simple fichero de texto plano en el formato explicado más abajo y tiene como salida un fichero GIFT que podremos importar en Moodle sin problemas. 
+Dicho fichero de entrada .txt se puede editar con Notepad o cualquier otro editor de texto plano o sin formato.
 
 En principio el script está pensado solo para preguntas de opción múltiple donde solo hay una respuesta válida. La penalización de las respuestas incorrectas está fijada a -33.3% pero se puede cambiar en el código editanto el script como veremos más adelante. 
 
@@ -12,7 +12,7 @@ En principio el script está pensado solo para preguntas de opción múltiple do
 Es necesario tener instalado Python en tu equipo para su ejecución:
 [Descarga Python](https://www.python.org/downloads/)
 
-Tendremos que ejecutar en el terminal, en el directorio donde se encuentre el script y el fichero de entrada, el siguiente comando:
+Tendremos que ejecutar en el terminal, en el directorio donde se encuentre el script y el fichero txt de entrada, el siguiente comando:
 ```
 python txt2gift.py input_questions.txt test_name
 ```
@@ -20,13 +20,13 @@ python txt2gift.py input_questions.txt test_name
 Donde: 
 
 - **input_questions.txt** es un fichero de texto plano de entrada. Tendrá un formato determinado (explicado en el siguiente punto).
-- **test_name** es el nombre que le daremos al test. Se utilizará dicha cadena de texto para nombrar las preguntas dentro del fichero y también para nombrar el fichero de salida. 
+- **test_name** es el nombre que le daremos al test (sin espacios). Se utilizará dicho nombre para nombrar las preguntas dentro del fichero y también para nombrar el fichero de salida. 
 
 Una vez ejecutado, obtendremos un fichero llamado `test_name_gift.txt` que será el que tendremos que importar en Moodle.
 
 ## Formato de fichero de texto de entrada.
 Como se puede observar en el fichero de ejemplo de entrada **example_input_questions.txt** este fichero contendrá las preguntas. Cada pregunta y sus respuestas se escriben en líneas consecutivas. El enunciado de la pregunta será la primera línea y el resto de líneas son las posibles respuestas. La respuesta marcada con asterisco (*), será la válida.
-Cada pregunta y sus opciones se separarán con doble salto de línea. 
+Cada pregunta y sus opciones se separarán con doble salto de línea del siguiente grupo de pregunta con respuestas.
 Ejemplo:
 ```
 Enunciado de la pregunta 1:
