@@ -6,11 +6,11 @@ En principio está pensado solo para preguntas de opción múltiple donde solo h
 
 Se puede ajustar el porcentaje de penalización de las respuestas incorrectas editando la variable dentro del script en esta línea:
 
-`
+```python
 # Porcentaje de penalización de las respuestas erróneas (por defecto -33.33333%)
 # Si se desea otro, cambiar a mano esta cifra
 porcentaje_incorrectas = -33.33333
-`
+```
 
 ## Utilización del comando:
 
@@ -19,9 +19,10 @@ Es necesario tener instalado Python en tu equipo para su ejecución:
 
 
 Tendremos que ejecutar en el terminal en el directorio donde se encuentre el script y el fichero de entrada el siguiente comando:
-`
+```
 python txt2gift.py input_questions.txt test_name
-`
+```
+
 Donde: 
 
 - **input_questions.txt** es un fichero de textod plano de entrada. Tendrá un formato determinado explicado en el siguiente punto.
@@ -31,7 +32,7 @@ Donde:
 Como se puede observar en el fichero de ejemplo de entrada **example_input_questions.txt** este fichero contendrá las preguntas. Cada pregunta y sus respuestas se escriben en líneas consecutivas. El enunciado de la pregunta será la primera línea y el resto de líneas son las posibles respuestas. La respuesta marcada con asterisco (*), será la válida.
 Cada pregunta y sus opciones se separarán con doble salto de línea. 
 Ejemplo:
-`
+```
 Enunciado de la pregunta 1:
 *Respuesta correcta
 Respuesta incorrecta
@@ -43,7 +44,7 @@ Enunciado de la pregunta 2:
 Respuesta incorrecta
 Respuesta incorrecta
 Respuesta incorrecta
-`
+```
 
 
 
